@@ -1,5 +1,7 @@
 # Web Programming Unpas Codeigniter 4 Tutorial
 
+## Playlist: https://www.youtube.com/playlist?list=PLFIM0718LjIUkkIq1Ub6B5dYNb6IlMvtc
+
 ### 10 Hal Baru di CODEIGNITER 4 (Yang Harus Kalian Ketahui)
 
 ### Tutorial CodeIgniter 4 untuk PEMULA | 1. Intro
