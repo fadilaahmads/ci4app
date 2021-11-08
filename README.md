@@ -2,15 +2,15 @@
 
 ## Playlist: https://www.youtube.com/playlist?list=PLFIM0718LjIUkkIq1Ub6B5dYNb6IlMvtc
 
-### 10 Hal Baru di CODEIGNITER 4 (Yang Harus Kalian Ketahui)
+1.  10 Hal Baru di CODEIGNITER 4 (Yang Harus Kalian Ketahui)
 
-### Tutorial CodeIgniter 4 untuk PEMULA | 1. Intro
+2.  Tutorial CodeIgniter 4 untuk PEMULA | 1. Intro
 
-### Tutorial CodeIgniter 4 untuk PEMULA | 2. Persiapan & Instalasi
+3.  Tutorial CodeIgniter 4 untuk PEMULA | 2. Persiapan & Instalasi
 
-### Tutorial CodeIgniter 4 untuk PEMULA | 3. Struktur Folder & Environment
+4.  Tutorial CodeIgniter 4 untuk PEMULA | 3. Struktur Folder & Environment
 
-## Tutorial CodeIgniter 4 untuk PEMULA | 4. Routes & Controller
+<strong> 5) Tutorial CodeIgniter 4 untuk PEMULA | 4. Routes & Controller</strong>
 
 # CodeIgniter 4 Application Starter
 
