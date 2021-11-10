@@ -8,8 +8,8 @@ class Coba extends BaseController
     {
         echo "Ini controller coba method index ";
     }
-    public function about($nama = " ")
+    public function about($nama = " ", $umur = " ")
     {
-        echo "Halo, nama saya $nama";
+        echo "Halo, nama saya $nama, saya berumur $umur tahun";
     }
 }
