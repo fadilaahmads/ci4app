@@ -32,6 +32,9 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->get('/coba/(:any)', 'Coba::about/$1');
+//:any is a placeholder for any value user type in
+//$1 will take any value in order from :any placeholder 
 
 /*
  * --------------------------------------------------------------------
