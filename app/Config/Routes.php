@@ -37,6 +37,7 @@ $routes->get('/coba/about', 'Coba::about');
 $routes->get('/coba/(:any)', 'Coba::about/$1');
 //:any is a placeholder for any value user type in
 //$1 will take any value in order from :any placeholder 
+$routes->get('/users', 'Admin\Users::index');
 
 /*
  * --------------------------------------------------------------------
