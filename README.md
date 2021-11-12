@@ -12,7 +12,7 @@ Tutorial CodeIgniter 4 untuk PEMULA | 3. Struktur Folder & Environment
 
 Tutorial CodeIgniter 4 untuk PEMULA | 4. Routes & Controller
 
-<strong>Tutorial CodeIgniter 4 untuk PEMULA | 5. Views</strong>
+<strong>Tutorial CodeIgniter 4 untuk PEMULA | 5. Views 4:54</strong>
 
 # CodeIgniter 4 Application Starter
 
