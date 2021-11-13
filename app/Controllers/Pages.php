@@ -18,4 +18,11 @@ class Pages extends BaseController
         ];
         return view('pages/about', $data);
     }
+    public function contact()
+    {
+        $data = [
+            'title' => 'Contact Us'
+        ];
+        return view('pages/contact', $data);
+    }
 }
