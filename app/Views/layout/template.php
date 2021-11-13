@@ -30,7 +30,7 @@
         </div>
     </nav>
 
-
+    <?= $this->renderSection('content'); ?>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
