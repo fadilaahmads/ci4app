@@ -10,6 +10,10 @@ class Pages extends BaseController
     }
     public function about()
     {
-        return view('pages/about');
+        //Calling few views
+        echo view('layout/header');
+        echo view('pages/about');
+        echo view('layout/footer');
+        //return view('pages/about');
     }
 }
