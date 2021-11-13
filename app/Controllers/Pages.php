@@ -9,20 +9,13 @@ class Pages extends BaseController
         $data = [
             'title' => 'Home | WPU'
         ];
-        echo view('layout/header', $data); //data sent to header.php
-        echo view('pages/home');
-        echo view('layout/footer');
-        //return view("pages/home");
+        return view('pages/home', $data);
     }
     public function about()
     {
         $data = [
             'title' => 'About Me'
         ];
-        //Calling few views
-        echo view('layout/header', $data);
-        echo view('pages/about');
-        echo view('layout/footer');
-        //return view('pages/about');
+        return view('pages/about', $data);
     }
 }
