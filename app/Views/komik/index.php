@@ -1,6 +1,6 @@
 <?= $this->extend('layout/template'); ?>
 
-<?= $this->secteion('content'); ?>
+<?= $this->section('content'); ?>
 <div class="container">
     <div class="row">
         <div class="col">
