@@ -6,6 +6,11 @@ use App\Models\KomikModel;
 
 class Komik extends BaseController
 {
+    protected $komikModel;
+    public function __construct()
+    {
+        $this->komikModel = new KomikModel();
+    }
     public function index()
     {
         $data = [
@@ -20,8 +25,7 @@ class Komik extends BaseController
         // }
 
         // $komikModel = new \App\Models\KomikModel();
-        $komikModel = new KomikModel();
-        $komik = $komikModel->findAll();
+        $komik = $this->komikModel->findAll();
 
         return view('komik/index', $data);
     }
