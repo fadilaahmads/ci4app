@@ -16,7 +16,8 @@ Tutorial CodeIgniter 4 untuk PEMULA | 5. Views
 
 Tutorial CodeIgniter 4 untuk PEMULA | 6. View Layouts
 
-<h2><strong>Tutorial CodeIgniter 4 untuk PEMULA | 7. Model 9:00</strong></h2>
+Tutorial CodeIgniter 4 untuk PEMULA | 7. Model
+<strong><h2>Tutorial CodeIgniter 4 untuk PEMULA | 8. Model (Bagian 2)</h2></strong>
 
 # CodeIgniter 4 Application Starter
 
