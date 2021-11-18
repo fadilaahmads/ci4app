@@ -21,6 +21,7 @@ class Komik extends BaseController
 
         // $komikModel = new \App\Models\KomikModel();
         $komikModel = new KomikModel();
+        $komik = $komikModel->findAll();
 
         return view('komik/index', $data);
     }
