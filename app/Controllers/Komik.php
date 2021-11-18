@@ -13,8 +13,11 @@ class Komik extends BaseController
     }
     public function index()
     {
+        $komik = $this->komikModel->findAll();
+
         $data = [
-            'title' => 'Daftar Komik'
+            'title' => 'Daftar Komik',
+            'komik' => $komik
         ];
 
         // Cara konek ke db tanpa model
@@ -25,7 +28,6 @@ class Komik extends BaseController
         // }
 
         // $komikModel = new \App\Models\KomikModel();
-        $komik = $this->komikModel->findAll();
 
         return view('komik/index', $data);
     }
