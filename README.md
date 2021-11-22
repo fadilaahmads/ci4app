@@ -20,7 +20,7 @@ Tutorial CodeIgniter 4 untuk PEMULA | 7. Model
 
 Tutorial CodeIgniter 4 untuk PEMULA | 8. Model (Bagian 2)
 
-<strong><h2>Tutorial CodeIgniter 4 untuk PEMULA | 9. Insert Data</h2></strong>
+<strong><h2>Tutorial CodeIgniter 4 untuk PEMULA | 9. Insert Data 17:46</h2></strong>
 
 # CodeIgniter 4 Application Starter
 
