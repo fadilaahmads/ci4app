@@ -50,4 +50,10 @@ class Komik extends BaseController
 
         return view('komik/create', $data);
     }
+
+    public function save()
+    {
+        //Mengelola data yang dikirim dari create untuk diinsert kedalam tabel
+
+    }
 }
