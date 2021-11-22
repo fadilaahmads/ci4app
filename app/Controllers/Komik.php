@@ -54,6 +54,6 @@ class Komik extends BaseController
     public function save()
     {
         //Mengelola data yang dikirim dari create untuk diinsert kedalam tabel
-
+        $this->request->getVar();
     }
 }
