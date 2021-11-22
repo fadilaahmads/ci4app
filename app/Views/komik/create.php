@@ -7,18 +7,30 @@
             <h2 class="my-3">Form Tambah Data Komik</h2>
             <form>
                 <div class="row mb-3">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <label for="judul" class="col-sm-2 col-form-label">Judul</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3">
+                        <input type="text" class="form-control" id="judul" name="judul" autofocus>
                     </div>
                 </div>
                 <div class="row mb-3">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                    <label for="penulis" class="col-sm-2 col-form-label">Penulis</label>
                     <div class="col-sm-10">
-                        <input type="password" class="form-control" id="inputPassword3">
+                        <input type="text" class="form-control" id="penulis" name="penulis">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
+                <div class="row mb-3">
+                    <label for="penerbit" class="col-sm-2 col-form-label">Penerbit</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="penerbit" name="penerbit">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="sampul" class="col-sm-2 col-form-label">Sampul</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="sampul" name="sampul">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Tambah Data</button>
             </form>
         </div>
     </div>
