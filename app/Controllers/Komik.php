@@ -110,6 +110,30 @@ class Komik extends BaseController
 
     public function update($id)
     {
+        // Cek Judul
+        $komikLama = $this->komikModel->getKomik($this->request->getVar('slug'));
+        if ($komikLama['judul'] == $this->request->getVar('judul')) {
+            $rule_judul = 'required';
+        } else {
+            $rule_judul = "required|is_unique[komik.judul]";
+        }
+
+        // Validasi input
+        if (!$this->validate([
+            // validation rules
+            'judul' =>  [
+                'rules' => $rule_judul,
+                'errors' => [
+                    'required' => '{field} komik harus diisi!',
+                    'is_unique' => '{field} komik sudah terdaftar!'
+                ]
+            ]
+        ])) {
+            $validation = \Config\Services::validation();
+
+            return redirect()->to('/komik/create')->withInput()->with('validation', ' $validation');
+        }
+
         $slug = url_title($this->request->getVar('judul'), '-', true);
         $this->komikModel->save([
             'id' => $id,
