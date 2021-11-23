@@ -110,5 +110,18 @@ class Komik extends BaseController
 
     public function update($id)
     {
+        $slug = url_title($this->request->getVar('judul'), '-', true);
+        $this->komikModel->save([
+            'id' => $id,
+            'judul' => $this->request->getVar('judul'),
+            'slug' => $slug,
+            'penulis' => $this->request->getVar('penulis'),
+            'penerbit' => $this->request->getVar('penerbit'),
+            'sampul' => $this->request->getVar('sampul')
+        ]);
+
+        session()->setFlashData('pesan', 'Data berhasil Diubah');
+
+        return redirect()->to('/komik');
     }
 }
