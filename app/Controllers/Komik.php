@@ -63,9 +63,11 @@ class Komik extends BaseController
         if (!$this->validate([
             // validation rules
             'judul' => 'required|is_unique[komik.judul]'
-        ]))
+        ])) {
+            return redirect()->to('/komik/create');
+        }
 
-            $slug = url_title($this->request->getVar('judul'), '-', true);
+        $slug = url_title($this->request->getVar('judul'), '-', true);
         $this->komikModel->save([
             'judul' => $this->request->getVar('judul'),
             'slug' => $slug,
