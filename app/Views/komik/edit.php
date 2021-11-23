@@ -7,6 +7,7 @@
             <h2 class="my-3">Form Ubah Data Komik</h2>
             <form action="/komik/update/<?= $komik['id']; ?>" method="POST">
                 <?= csrf_field(); ?>
+                <input type="hidden" name="slug" value="<?= $komik['slug']; ?>">
                 <div class="row mb-3">
                     <label for="judul" class="col-sm-2 col-form-label">Judul</label>
                     <div class="col-sm-10">
