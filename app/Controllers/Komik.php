@@ -48,8 +48,10 @@ class Komik extends BaseController
 
     public function create()
     {
+        session();
         $data = [
-            "title" => "Form Tambah Data Komik"
+            "title" => "Form Tambah Data Komik",
+            "validation" => \Config\Services::validation()
         ];
 
         return view('komik/create', $data);
