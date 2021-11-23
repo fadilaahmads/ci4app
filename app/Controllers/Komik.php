@@ -63,7 +63,13 @@ class Komik extends BaseController
         // Validasi input
         if (!$this->validate([
             // validation rules
-            'judul' => 'required|is_unique[komik.judul]'
+            'judul' =>  [
+                'rules' => 'required|is_unique[komik.judul]',
+                'errors' => [
+                    'required' => '{field} komik harus diisi!',
+                    'is_unique' => 'Komik {field} sudah terdaftar!'
+                ]
+            ]
         ])) {
             $validation = \Config\Services::validation();
 
