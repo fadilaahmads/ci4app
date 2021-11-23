@@ -107,4 +107,8 @@ class Komik extends BaseController
 
         return view('komik/edit', $data);
     }
+
+    public function update($id)
+    {
+    }
 }
