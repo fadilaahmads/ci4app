@@ -59,7 +59,13 @@ class Komik extends BaseController
     {
         //Mengelola data yang dikirim dari create untuk diinsert kedalam tabel
 
-        $slug = url_title($this->request->getVar('judul'), '-', true);
+        // Validasi input
+        if (!$this->validate([
+            // validation rules
+            'judul' => 'required|is_unique[komik.judul]'
+        ]))
+
+            $slug = url_title($this->request->getVar('judul'), '-', true);
         $this->komikModel->save([
             'judul' => $this->request->getVar('judul'),
             'slug' => $slug,
