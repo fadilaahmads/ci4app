@@ -96,4 +96,15 @@ class Komik extends BaseController
         session()->setFlashData('pesan', 'Data berhasil Dihapus');
         return redirect()->to('/komik');
     }
+
+    public function edit($slug)
+    {
+        $data = [
+            "title" => "Form Ubah Data Komik",
+            "validation" => \Config\Services::validation(),
+            "komik" => $this->komikModel->getKomik($slug)
+        ];
+
+        return view('komik/edit', $data);
+    }
 }
