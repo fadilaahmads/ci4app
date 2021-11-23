@@ -64,7 +64,9 @@ class Komik extends BaseController
             // validation rules
             'judul' => 'required|is_unique[komik.judul]'
         ])) {
-            return redirect()->to('/komik/create');
+            $validation = \Config\Services::validation();
+
+            return redirect()->to('/komik/create')->withInput()->with('validation', ' $validation');
         }
 
         $slug = url_title($this->request->getVar('judul'), '-', true);
