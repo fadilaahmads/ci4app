@@ -68,6 +68,8 @@ class Komik extends BaseController
             'sampul' => $this->request->getVar('sampul')
         ]);
 
+        session()->setFlashData('pesan', 'Data berhasil Ditambahkan');
+
         return redirect()->to('/komik');
     }
 }
