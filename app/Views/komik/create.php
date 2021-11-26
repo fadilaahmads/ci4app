@@ -32,7 +32,7 @@
                     <label for="sampul" class="col-sm-2 col-form-label">Sampul</label>
                     <div class="col-sm-10">
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="sampul" name="sampul">
+                            <input type="file" class="custom-file-input <?= ($validation->hasError('sampul') ? 'is-invalid' : ''); ?>" id="sampul" name="sampul">
                             <label class="custom-file-label" for="sampul">Pilih gambar...</label>
                         </div>
                     </div>
