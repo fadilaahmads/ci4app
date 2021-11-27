@@ -128,7 +128,15 @@ class Komik extends BaseController
                     'is_unique' => '{field} komik sudah terdaftar!'
                 ]
             ],
-            'sampul' => 'uploaded[sampul]'
+            'sampul' => [
+                'rules' => 'uploaded[sampul]|max_size[sampul,1024]|is_image[sampul]|mime_in[sampul,image/jpg,image/jpeg,image/png]',
+                'errors' => [
+                    'uploaded' => 'Pilih  gambar sampul terlebih dahulu',
+                    'max_size' => 'Ukuran gambar terlalu besar',
+                    'is_image' => 'Yang anda pilih bukan gambar',
+                    'mime_in' => 'Yang anda pilih bukan gambar'
+                ]
+            ]
         ])) {
             // $validation = \Config\Services::validation();
 
