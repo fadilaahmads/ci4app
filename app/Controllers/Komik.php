@@ -144,6 +144,13 @@ class Komik extends BaseController
             return redirect()->to('/komik/create')->withInput();
         }
 
+        // Ambil Gambar
+        $fileSampul = $this->request->getFile('sampul');
+        // Pindahkan ke folder img
+        $fileSampul->move('img');
+        // Ambil Nama file
+        $namaSampul = $fileSampul->getName();
+
         $slug = url_title($this->request->getVar('judul'), '-', true);
         $this->komikModel->save([
             'id' => $id,
@@ -151,7 +158,7 @@ class Komik extends BaseController
             'slug' => $slug,
             'penulis' => $this->request->getVar('penulis'),
             'penerbit' => $this->request->getVar('penerbit'),
-            'sampul' => $this->request->getVar('sampul')
+            'sampul' => $namaSampul
         ]);
 
         session()->setFlashData('pesan', 'Data berhasil Diubah');
