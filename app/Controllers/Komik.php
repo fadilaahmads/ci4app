@@ -93,7 +93,7 @@ class Komik extends BaseController
         // Generate nama sampul random
         $namaSampul = $fileSampul->getRandomName();
         // Pindahkan ke folder img
-        $fileSampul->move('img');
+        $fileSampul->move('img', $namaSampul);
 
 
         $slug = url_title($this->request->getVar('judul'), '-', true);
