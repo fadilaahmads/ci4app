@@ -177,10 +177,17 @@ class Komik extends BaseController
 
         // Ambil Gambar
         $fileSampul = $this->request->getFile('sampul');
-        // Pindahkan ke folder img
-        $fileSampul->move('img');
-        // Ambil Nama file
-        $namaSampul = $fileSampul->getName();
+        // Cek gambar apakah tetap gambar lama
+        if ($fileSampul->getError() == 4) {
+            $namaSampul = $this->request->getVar('sampulLama');
+        } else {
+            // Generate nama file random
+            $namaSampul = $fileSampul->getRandomName();
+            // Pindahkan ke folder img
+            $fileSampul->move('img', $namaSampul);
+            // Hapus file lama
+            unlink('img/' . $this->request->getVar('sampulLama'));
+        }
 
         $slug = url_title($this->request->getVar('judul'), '-', true);
         $this->komikModel->save([
