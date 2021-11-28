@@ -116,6 +116,7 @@ class Komik extends BaseController
 
     public function delete($id)
     {
+        // Menghapus data di dalam model, model menghapus data hanya di dalam tabel, file tidak terhapus
         $this->komikModel->delete($id);
         session()->setFlashData('pesan', 'Data berhasil Dihapus');
         return redirect()->to('/komik');
