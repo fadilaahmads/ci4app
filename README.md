@@ -20,13 +20,15 @@ Tutorial CodeIgniter 4 untuk PEMULA | 7. Model
 
 Tutorial CodeIgniter 4 untuk PEMULA | 8. Model (Bagian 2)
 
-Tutorial CodeIgniter 4 untuk PEMULA | 9. Insert Data 17:46
+Tutorial CodeIgniter 4 untuk PEMULA | 9. Insert Data
 
 Tutorial CodeIgniter 4 untuk PEMULA | 10. Validation
 
 Tutorial CodeIgniter 4 untuk PEMULA | 11. Delete & Edit
 
-<h2><strong>Tutorial CodeIgniter 4 untuk PEMULA | 12. Upload File 28:27</strong></h2>
+Tutorial CodeIgniter 4 untuk PEMULA | 12. Upload File
+
+<h2><strong>Tutorial CodeIgniter 4 untuk PEMULA | 13. Migration, Seeder & Faker 0:00</strong></h2>
 
 # CodeIgniter 4 Application Starter
 
