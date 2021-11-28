@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-8">
             <h2 class="my-3">Form Ubah Data Komik</h2>
-            <form action="/komik/update/<?= $komik['id']; ?>" method="POST">
+            <form action="/komik/update/<?= $komik['id']; ?>" method="POST" enctype="multipart/form-data">
                 <?= csrf_field(); ?>
                 <input type="hidden" name="slug" value="<?= $komik['slug']; ?>">
                 <div class="row mb-3">
