@@ -34,7 +34,7 @@
                         <img src="/img/default.png" class="img-thumbnail img-preview">
                     </div>
                     <div class="col-sm-8">
-                        <input type="file" class="form-control <?= ($validation->hasError('sampul') ? 'is-invalid' : ''); ?>" id="sampul" name="sampul">
+                        <input type="file" class="form-control <?= ($validation->hasError('sampul') ? 'is-invalid' : ''); ?>" id="sampul" name="sampul" onchange="previewImg()">
                         <div class="invalid-feedback">
                             <?= $validation->getError('sampul'); ?>
                         </div>
