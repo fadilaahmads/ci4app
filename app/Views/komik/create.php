@@ -31,7 +31,7 @@
                 <div class="row mb-3">
                     <label for="sampul" class="col-sm-2 col-form-label">Sampul</label>
                     <div class="col-sm-2">
-                        <img src="/img/default.png" class="img-thumbnail">
+                        <img src="/img/default.png" class="img-thumbnail img-preview">
                     </div>
                     <div class="col-sm-8">
                         <input type="file" class="form-control <?= ($validation->hasError('sampul') ? 'is-invalid' : ''); ?>" id="sampul" name="sampul">
