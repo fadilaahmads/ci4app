@@ -34,14 +34,14 @@
 
     <script>
         function previewImg() {
-            const sampul = document.querySelector('#sampul');
-            // const sampulLabel = document.querySelector('');
+            const sampul = document.querySelector('#sampul'); // ambil inputan sampul
+            const sampulLabel = document.querySelector('.custom-file-label'); // ambil label
             const imgPreview = document.querySelector('.img-preview');
 
             sampulLabel.textContent = sampul.files[0].name;
 
-            const fileSampul = new FileReader();
-            fileSampul.readAsDataURL(sampul.files[0]);
+            const fileSampul = new FileReader(); //ambil file yang diupload
+            fileSampul.readAsDataURL(sampul.files[0]); // ambil alamat penyimpannannya, ambil nama filenya
 
             fileSampul.onload = function(e) {
                 imgPreview.src = e.target.result;
