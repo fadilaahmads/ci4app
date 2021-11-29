@@ -11,10 +11,24 @@ class OrangSeeder extends Seeder
     public function run()
     {
         $data = [
-            'nama'          => 'Dil',
-            'alamat'        => 'Jl. ABCD no.99',
-            'created_at'    => Time::now(),
-            'updated_at'    => Time::now()
+            [
+                'nama'          => 'Dil',
+                'alamat'        => 'Jl. ABCD no.99',
+                'created_at'    => Time::now(),
+                'updated_at'    => Time::now()
+            ],
+            [
+                'nama'          => 'Dal',
+                'alamat'        => 'Jl. ABCD no.01',
+                'created_at'    => Time::now(),
+                'updated_at'    => Time::now()
+            ],
+            [
+                'nama'          => 'Dul',
+                'alamat'        => 'Jl. ABCD no.02',
+                'created_at'    => Time::now(),
+                'updated_at'    => Time::now()
+            ]
         ];
 
         // Simple Queries
