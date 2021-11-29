@@ -15,7 +15,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <<?= $i = 1; ?> <?php foreach ($orang as $o) : ?> <tr>
+                    <<?= $i = 1 + (5 * ($currentPage - 1)); ?> <?php foreach ($orang as $o) : ?> <tr>
                         <th scope="row"><?= $i++; ?></th>
                         <td><?= $o['nama']; ?></td>
                         <td><?= $o['alamat']; ?></td>
