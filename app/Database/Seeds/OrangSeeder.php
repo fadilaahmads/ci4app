@@ -11,8 +11,8 @@ class OrangSeeder extends Seeder
     public function run()
     {
         $data = [
-            'nama'          => 'dil',
-            'alamat'        => 'jl. abc',
+            'nama'          => 'Dil',
+            'alamat'        => 'Jl. ABCD no.99',
             'created_at'    => Time::now(),
             'updated_at'    => Time::now()
         ];
