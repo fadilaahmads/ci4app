@@ -36,6 +36,7 @@ class OrangSeeder extends Seeder
         // VALUES(:nama:, :alamat:, :created_at:, :updated_at:)", $data);
 
         // Using Query Builder
-        $this->db->table('orang')->insert($data);
+        // $this->db->table('orang')->insert($data);
+        $this->db->table('orang')->insertBatch($data);
     }
 }
