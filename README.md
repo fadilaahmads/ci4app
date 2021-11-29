@@ -30,7 +30,9 @@ Tutorial CodeIgniter 4 untuk PEMULA | 12. Upload File
 
 Tutorial CodeIgniter 4 untuk PEMULA | 13. Migration, Seeder & Faker
 
-<h2><strong>Tutorial CodeIgniter 4 untuk PEMULA | 14. Pagination & Searching 0:00</strong></h2>
+Tutorial CodeIgniter 4 untuk PEMULA | 14. Pagination & Searching
+
+<h2><strong>Tutorial CodeIgniter 4 untuk PEMULA | 15. Upload ke WEB HOSTING 0:00</strong></h2>
 
 # CodeIgniter 4 Application Starter
 
