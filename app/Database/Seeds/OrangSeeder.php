@@ -14,9 +14,9 @@ class OrangSeeder extends Seeder
         ];
 
         // Simple Queries
-        $this->db->query("INSERT INTO users (username, email) VALUES(:username:, :email:)", $data);
+        $this->db->query("INSERT INTO orang (nama, alamat) VALUES(:nama:, :alamat:)", $data);
 
         // Using Query Builder
-        $this->db->table('users')->insert($data);
+        // $this->db->table('users')->insert($data);
     }
 }
