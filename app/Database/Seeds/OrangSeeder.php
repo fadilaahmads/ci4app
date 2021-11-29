@@ -18,7 +18,8 @@ class OrangSeeder extends Seeder
         ];
 
         // Simple Queries
-        $this->db->query("INSERT INTO orang (nama, alamat) VALUES(:nama:, :alamat:)", $data);
+        $this->db->query("INSERT INTO orang (nama, alamat, created_at, updated_at) 
+        VALUES(:nama:, :alamat:, :created_at:, :updated_at:)", $data);
 
         // Using Query Builder
         // $this->db->table('users')->insert($data);
