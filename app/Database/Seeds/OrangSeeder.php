@@ -37,7 +37,7 @@ class OrangSeeder extends Seeder
         $data = [
             'nama'          => $faker->name,
             'alamat'        => $faker->address,
-            'created_at'    => $timeWIB,
+            'created_at'    => Time::createFromTimestamp($faker->unixTime()),
             'updated_at'    => $timeWIB
 
         ];
