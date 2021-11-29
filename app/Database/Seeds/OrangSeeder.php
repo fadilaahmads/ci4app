@@ -10,24 +10,25 @@ class OrangSeeder extends Seeder
 {
     public function run()
     {
+        $timeWIB = Time::now('Asia/Jakarta');
         $data = [
             [
                 'nama'          => 'Dil',
                 'alamat'        => 'Jl. ABCD no.99',
-                'created_at'    => Time::now(),
-                'updated_at'    => Time::now()
+                'created_at'    => $timeWIB,
+                'updated_at'    => $timeWIB
             ],
             [
                 'nama'          => 'Dal',
                 'alamat'        => 'Jl. ABCD no.01',
-                'created_at'    => Time::now(),
-                'updated_at'    => Time::now()
+                'created_at'    => $timeWIB,
+                'updated_at'    => $timeWIB
             ],
             [
                 'nama'          => 'Dul',
                 'alamat'        => 'Jl. ABCD no.02',
-                'created_at'    => Time::now(),
-                'updated_at'    => Time::now()
+                'created_at'    => $timeWIB,
+                'updated_at'    => $timeWIB
             ]
         ];
 
