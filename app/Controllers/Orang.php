@@ -13,11 +13,12 @@ class Orang extends BaseController
     }
     public function index()
     {
-
+        $currentPage = $this->request->getVar('page_orang') ? $this->request->getVar('page_orang') : 1;
         $data = [
             'title' => 'Daftar Orang',
             'orang' => $this->orangModel->paginate(5, 'orang'),
-            'pager' => $this->orangModel->pager
+            'pager' => $this->orangModel->pager,
+            'currentPage' => $currentPage
         ];
         return view('orang/index', $data);
     }
